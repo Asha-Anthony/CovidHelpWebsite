@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <title>Online Consultation Form</title>
+    <link href="base.css" rel="stylesheet" >
+    <link href="form_event.css" rel="stylesheet" />
+    <script src='form_event.js' defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <header>
+        <a href="home.html">
+            <img src="logo.png" alt="Covid Updates">
+            <div class="top-right">Helpline Number :+91-11-23978046<br>Helpline Email ID : ncov2019@gov.in</div>
+        </a>
+    </header>
+    <nav class="horizontal">
+        <ul>
+           <li><a href="home.html">Home</a></li>
+           <li><a href="vaccine.html">Vaccine Information</a></li>        
+        </ul>
+     </nav>
+    
+    <div id='formDiv'>
+        <form onsubmit="alert('submitting');" action='https://www.example.com/submit' method='post'>
+            <legend>Online Consulation Form</legend>
+            <div class='row'>
+                <label for='name'>PATIENT NAME</label>
+                <input id='name' type="text" name="name" required>
+            </div>
+
+            <div class='row'>
+                <label for='Age'>AGE</label>
+                <input id='Age' type="number" name="Age">
+            </div>
+
+            <div class='row'>
+                <label for='gender'>GENDER</label>
+                <fieldset class="optGender">
+                    <label class = "radio"for="cMale" >Male</label>
+                    <input name="oGender" id="cYes" value="Male" type="radio" checked />
+                    <label class ="radio"for="cFemale">Female</label>
+                    <input name="oGender" id="cNo" value="Female" type="radio" />
+                </fieldset>
+            </div>
+
+            <div class='row'>
+                <label for="phoneBox">Phone Number</label>
+                <input type="tel" name="PHONE" id="phoneBox" 
+                pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" placeholder="(nnn)nnn-nnnn">
+            </div>
+
+            <div class='row'>
+                <label for="mailBox">E-mail</label>
+                <input type="email" name="email" id="mailBox" required placeholder="abc@gmail.com">
+            </div>
+
+            <div class='row'>
+                <label for="adate">PREFERRED APPOINTMENT DATE</label>
+                <input name="adate" id="adate" type="date" required />
+            </div>
+            <div class='row'>
+                <label for="atime">PREFERRED TIME(choose 2)</label>
+                <input name="atime" id="amorning" value="9AM-12PM" type="checkbox" />
+                <label for="amorning">9AM-12PM</label>
+                <input name="noon" id="anoon" value="1PM-3PM" type="checkbox" />
+                <label for="anoon">1PM-3PM</label>
+                <input name="evening" id="aevening" value="3PM-6PM" type="checkbox" />
+                <label for="aevening">3PM-6PM</label>
+            </div>
+
+            <div class='row'>
+                <label for='consultationType'>CONSULTATION TYPE</label>
+                <select name="consultationType" id="consultationType">
+                    <option value="General" selected>Family Medicine</option>
+                    <option value="Pediatrics">Pediatrics</option>
+                    <option value="Cardiologist">Cardiologist</option>
+                    <option value="Psychiatrist">Psychiatrist</option>
+                </select>
+            </div>
+            
+            <div class='submit'>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <img src="images.png" alt="doctor">
+    <footer>
+        The information contained in the application is received from various users and therefore we are not responsible for the 
+        accuracy of the data made available through this platform.
+     </footer>
+</body>
+</html>

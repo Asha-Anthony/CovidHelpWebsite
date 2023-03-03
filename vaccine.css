@@ -1,0 +1,45 @@
+table{
+    padding: 20px;
+    grid-column: span 2;
+}
+
+#heading{
+    background-color: darkorange;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 0.5em;
+}
+
+#Pfizer{
+    background-color: #072F5F;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 0.5em;
+}
+
+#Moderna{
+    background-color:#1261A0;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 0.5em;
+}
+
+#jj{
+    background-color:#3895D3;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 0.5em;
+}
+
+tr >img {
+    width:10px;
+    height:10px;
+}

@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    font-family: Helvetica;
+}
+header img{
+    padding-top:3%;
+    width: 100%;
+    height: 60%;
+    grid-column: span 2;
+    padding-bottom: 0px;
+}
+.top-right {
+    position: absolute;
+    top: 50px;
+    right: 16px;
+    color: rgb(1, 71,136);
+    font-weight: bold;
+  }
+nav.horizontal{
+    padding: 0px;
+    border-bottom: 0.2em;
+    border-style: hidden hidden solid hidden;
+    text-align: center; 
+    border-color: lightgray;
+    grid-column:span 2 ;
+    background-color: rgb(1, 71,136);
+}
+
+nav.horizontal li{
+    padding: 0px;
+    display: block;
+    width: 50%;
+    float:left;
+}
+
+nav.horizontal ul li {
+    font-size: 1em;
+    font-weight: bold;
+    font-family: Helvetica; 
+    height: 100%; 
+
+ }
+ a{
+    text-decoration: none;  
+ }
+ 
+ nav.horizontal a:link, nav.horizontal a:visited {
+    color:white;
+ }
+ 
+ nav.horizontal a:hover, nav.horizontal a:active {
+    color:darkorange;
+ }
+
+ footer{
+    grid-column: span 2;
+    position:absolute;
+    left: 0;
+    bottom:0;
+   width: 100%;
+   padding-bottom: 5px;
+   background-color: rgb(1, 71,136);
+   color: white;
+   text-align: center;
+}
+@keyframes blink{
+  0%   {color:red;font-size: 0.8em;}
+  25%  {color:yellow;font-size: 1em;}
+  50%  {color:orange;font-size: 0.8em; }
+  75%  {color:lightgreen;font-size: 1em; }
+  90%  {color:lightblue; font-size: 0.8em;}
+
+}
+#animate{
+    color: white;
+    animation-name: blink;
+    animation-duration:5s;
+    animation-iteration-count: 50;
+}
+
+@media only screen and (max-width: 640px) {
+    .top-right {
+   position: absolute;
+   top: 8px;
+   right: 16px;
+   font-size: 10px;
+   color: rgb(1, 71,136);
+   font-weight: bold;
+ }
+
+}

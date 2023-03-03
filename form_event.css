@@ -1,0 +1,70 @@
+
+#formdiv {
+    padding-left:3%;
+    grid-column: 1;
+
+}
+
+legend{
+    padding-top:0.3em;
+    font-size:1.3em;
+    font-weight: bold;
+    color:rgb(1, 71,136);
+}
+
+.row{
+    padding-top: 2%;
+}
+label{
+    color:rgb(1, 71,136);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+input,fieldset,select{ 
+    border-style: solid;
+    border-color: darkgray;
+    font-size: 1em;
+    color: rgb(1, 71,136); 
+}
+
+input:hover, input:active, input:focus,fieldset:hover,fieldset:active,fieldset:focus ,select:hover,select:active,select:focus {
+    border-style: solid;
+    border-color: darkorange;
+    color: rgb(1, 71,136);
+
+}
+
+.submit>input{
+    align-self: center;
+    padding: 2%;
+    font-size: 1em;
+    background-color: rgb(1, 71,136);
+    color: white;
+
+}
+img{
+    grid-column: 2;
+    width:85%;
+    height:65%;
+}
+
+#responseText{
+    color: rgb(1, 71,136);
+    font-family: Helvetica;
+}
+#response tr{
+    background-color:rgb(1, 71,136);
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+
+}
+
+#responseBold{
+    color: rgb(1, 71,136);
+    font-family: Helvetica;
+    font-weight: bold;
+}
